@@ -664,9 +664,22 @@
                 <li><a href="#son-video" class="nav-link">Son Videomu İzle</a></li>
                 <li><a href="#iletisim" class="nav-link">İletişim Paneli</a></li>
                 <!-- GITHUB BÖLMƏSİ DÜYMƏSİ -->
-                <li><a href="https://github.com/kenanLo1" target="_blank" rel="noopener noreferrer" class="btn-github"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                <li><a href="#" class="https://kenanlo1.github.io"><i class="fa-solid fa-rotate-left"></i> Eskiye Dön</a></li>
-            </ul>
+                <a href="https://kenanlo1.github.io/" style="text-decoration:none;">
+<button id="b" style="background:transparent;color:#fff;border:2px solid red;padding:12px 28px;font-family:monospace;font-weight:bold;cursor:pointer;transition:0.3s;">⚡ ESKİYE DÖN</button>
+</a>
+<script>
+let colors = ['red', 'yellow', 'green', 'cyan', 'magenta', 'orange'];
+let i = 0;
+setInterval(() => {
+    let btn = document.getElementById('b');
+    btn.style.borderColor = colors[i];
+    btn.style.color = colors[i];
+    btn.style.boxShadow = `0 0 15px ${colors[i]}`;
+    i = (i + 1) % colors.length;
+}, 500);
+document.getElementById('b').onmouseover = () => event.target.style.transform = 'scale(1.05)';
+document.getElementById('b').onmouseout = () => event.target.style.transform = 'scale(1)';
+</script>
         </div>
     </header>
 
@@ -747,7 +760,7 @@
                 <h2 class="section-title"><i class="fa-solid fa-play"></i> Son Videomu İzle</h2>
             </div>
             <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/73vO7ZaUULs" title="Son Video" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/4KNNwGr7b0Y&t=9s" title="Son Video" allowfullscreen></iframe>
             </div>
         </section>
 
